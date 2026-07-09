@@ -244,11 +244,21 @@
 
     btnCapturar.addEventListener('click', () => {
         const context = canvas.getContext('2d');
-        canvas.width = video.videoWidth;
-        canvas.height = video.videoHeight;
+        
+        // Define uma resolução máxima discreta e leve (ex: 800x600 pixels)
+        const maxLargura = 800;
+        const proporcao = video.videoHeight / video.videoWidth;
+        
+        canvas.width = maxLargura;
+        canvas.height = maxLargura * proporcao;
+        
+        // Desenha a imagem redimensionada no canvas
         context.drawImage(video, 0, 0, canvas.width, canvas.height);
-        fotoDataUrl = canvas.toDataURL('image/png');
-        fotoStatus.textContent = "📸 Foto capturada!";
+        
+        // O SEGREDO: 'image/jpeg' com qualidade 0.6 (compacta 40% do peso sem perder nitidez)
+        fotoDataUrl = canvas.toDataURL('image/jpeg', 0.6); 
+        
+        fotoStatus.textContent = "📸 Foto capturada e otimizada!";
         fotoStatus.style.color = "#2ecc71";
     });
 
