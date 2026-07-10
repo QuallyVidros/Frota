@@ -23,7 +23,7 @@ Um sistema web leve, responsivo e focado em eficiência para o registro de quilo
 
 ## ⚖️ Aviso de Propriedade Intelectual e Termos de Uso
 
-> ### ⚠️ NOTA DEDIREITOS AUTORAIS E PROTEÇÃO LEGAL
+> ### ⚠️ NOTA DE DIREITOS AUTORAIS E PROTEÇÃO LEGAL
 >
 > Este repositório contém código-fonte, elementos de design, logomarcas, arquitetura de software e conteúdos que são de **propriedade estritamente privativa** do desenvolvedor/organização. 
 >
@@ -49,4 +49,4 @@ Um sistema web leve, responsivo e focado em eficiência para o registro de quilo
     * Execute o arquivo em qualquer servidor estático ou publique via GitHub Pages.
 
 ---
-Desenvolvido por [Seu Nome ou Nome da Empresa]. Todos os direitos reservados © 2026.
+Desenvolvido por Qually Vidros. Todos os direitos reservados © 2026.
