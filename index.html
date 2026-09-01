@@ -257,8 +257,8 @@
         // Desenha a imagem redimensionada no canvas
         context.drawImage(video, 0, 0, canvas.width, canvas.height);
         
-        // O SEGREDO: 'image/jpeg' com qualidade 0.8 (compacta 80% do peso sem perder nitidez)
-        fotoDataUrl = canvas.toDataURL('image/jpeg', 0.8); 
+        // O SEGREDO: 'image/jpeg' com qualidade 0.7 (compacta 30% do peso sem perder nitidez)
+        fotoDataUrl = canvas.toDataURL('image/jpeg', 0.7); 
         
         fotoStatus.textContent = "📸 Foto capturada e otimizada!";
         fotoStatus.style.color = "#2ecc71";
